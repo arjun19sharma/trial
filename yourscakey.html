@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cakey</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Font Link -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Yours Cakey</h1>
+                
+            </div>
+            <div class="header-logo">
+                <img src="images/logo.png" alt="Your Cakey Logo">
+            </div>
+        </div>
+    </header>
+
+    <!-- Cake Gallery -->
+    <div class="gallery">
+        <!-- Cake 1 -->
+        <div class="cake">
+            <a href="#modal1"><img src="images/cake1.png" alt="Peppa Pig Cake"></a>
+            <p>Peppa Pig Cake</p>
+        </div>
+
+        <!-- Cake 2 -->
+        <div class="cake">
+            <a href="#modal2"><img src="images/cake2.png" alt="Pineapple Elegance"></a>
+            <p>Pineapple Elegance</p>
+        </div>
+
+        <!-- Cake 3 -->
+        <div class="cake">
+            <a href="#modal3"><img src="images/cake3.jpg" alt="Red Velvet Love"></a>
+            <p>Red Velvet Love</p>
+        </div>
+
+        <!-- Cake 4 -->
+        <div class="cake">
+            <a href="#modal4"><img src="images/cake4.png" alt="Cars Chocolate Cake (Kids)"></a>
+            <p>Cars Chocolate Cake (Kids)</p>
+        </div>
+
+        <!-- Cake 5 -->
+        <div class="cake">
+            <a href="#modal5"><img src="images/cake5.png" alt="Blueberry Cake"></a>
+            <p>Blueberry Cake</p>
+        </div>
+
+        <!-- Cake 6 -->
+        <div class="cake">
+            <a href="#modal6"><img src="images/cake6.jpg" alt="Chocolate Truffle (Unicorn)"></a>
+            <p>Chocolate Truffle (Unicorn)</p>
+        </div>
+        
+        <!-- Additional Row -->
+        <div class="cake">
+            <a href="#modal7"><img src="images/cake7.jpg" alt="Easter Day Special Chocolate Truffle"></a>
+            <p>Easter Day Special Chocolate Truffle</p>
+        </div>
+        
+        <div class="cake">
+            <a href="#modal8"><img src="images/cake8.jpg" alt="Chocolate Truffle"></a>
+            <p>Chocolate Truffle</p>
+        </div>
+        
+        <div class="cake">
+            <a href="#modal9"><img src="images/cake9.jpg" alt="Chocolate Truffle Mermaid Cake (Kids)"></a>
+            <p>Chocolate Truffle Mermaid Cake (Kids)</p>
+        </div>
+    </div>
+
+    <!-- View More Button -->
+<div class="view-more">
+    <button onclick="openViewMore()">View More</button>
+</div>
+
+<!-- View More Popup -->
+<div id="viewMorePopup" class="modal">
+    <div class="modal-content">
+        <a href="#" class="close" onclick="closeViewMore()">&times;</a>
+        <h2>To view more photos and to place your order, contact:</h2>
+        <p>Our mission is to deliver the perfect cake that perfectly matches your vision, whether it’s a special flavor or a custom design. Every cake is made with care and attention to detail, designed to meet your desires while maintaining the highest standards of hygiene.</p>
+        <p>Email: yourcakey@example.com</p>
+        <p>Phone: +91 9833558666</p>
+    </div>
+</div>
+
+<script>
+    function openViewMore() {
+        document.getElementById("viewMorePopup").style.display = "flex";
+    }
+    
+    function closeViewMore() {
+        document.getElementById("viewMorePopup").style.display = "none";
+    }
+</script>
+    
+
+    <!-- Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake1.png" alt="Peppa Pig Cake">
+            <h2>Peppa Pig Cake</h2>
+            <p>This adorable Peppa Pig Cake is perfect for kids' birthdays! Which is rich with Chocolate Truffle.</p>
+            <p>Place your order, contact:</p>
+        <p>Email: yourcakey@example.com</p>
+        <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake2.png" alt="Pineapple Elegance">
+            <h2>Pineapple Elegance</h2>
+            <p>A delightful and luxorious pineapple cake! Perfect for anniversary and Birthday.</p>
+            <p>Place your order, contact:</p>
+        <p>Email: yourcakey@example.com</p>
+        <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake3.jpg" alt="Red Velvet Love">
+            <h2>Red Velvet Love</h2>
+            <p>A luxurious red velvet cake with cream cheese frosting.</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake4.png" alt="Cars Chocolate Cake (Kids)">
+            <h2>Cars Chocolate Cake (Kids)</h2>
+            <p>A rich and moist chocolate cake designed with a fun Cars theme.</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal5" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake5.png" alt="Blueberry Cake">
+            <h2>Blueberry Cake</h2>
+            <p>A refreshing blueberry cake.</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal6" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake6.jpg" alt="Chocolate Truffle (Unicorn)">
+            <h2>Chocolate Truffle (Unicorn)</h2>
+            <p>A colorful and magical chocolate truffle cake with unicorn design.</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal7" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake7.jpg" alt="Easter Day Special Chocolate Truffle">
+            <h2>Easter Day Special Chocolate Truffle</h2>
+            <p>A chocolate truffle cake perfect for easters day!</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal8" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake8.jpg" alt="Chocolate Truffle">
+            <h2>Chocolate Truffle</h2>
+            <p>A chocolate truffle cake with rose flower design.</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <a href="#" class="close">&times;</a>
+            <img src="images/cake9.jpg" alt="Chocolate Truffle Mermaid Cake (Kids)">
+            <h2>Chocolate Truffle Mermaid Cake (Kids)</h2>
+            <p>A chocolate truffle cake with mermaid design! Perfect for kids.</p>
+            <p>Place your order, contact:</p>
+            <p>Email: yourcakey@example.com</p>
+            <p>Phone: +91 9833558666</p>
+        </div>
+    </div>
+    
+</body>
+</html>

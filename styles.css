@@ -1,0 +1,240 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffffff;
+}
+
+
+/* Fancy Header Styling */
+header {
+    background-color: #9F2B68;
+    color: rgb(255, 255, 255);
+    padding: 20px; /* More padding for a zigzag effect */
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 95% 90%, 90% 85%, 85% 90%, 80% 85%, 75% 90%, 70% 85%, 65% 90%, 60% 85%, 55% 90%, 50% 85%, 45% 90%, 40% 85%, 35% 90%, 30% 85%, 25% 90%, 20% 85%, 15% 90%, 10% 85%, 5% 90%, 0 85%);
+}
+
+/* Header Content Styling */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensures vertical centering */
+    flex-wrap: wrap;
+    height: 150px; /* Adjust this value to control the vertical spacing */
+}
+
+/* Move the logo to the left */
+.header-logo {
+    order: 1;
+    display: flex;
+    align-items: center; /* Center the logo vertically */
+}
+
+/* Move the text to the right */
+.header-text {
+    order: 2;
+    text-align: right;
+    display: flex;
+    align-items: center; /* Center the text vertically */
+    height: 100%;
+}
+
+
+/* "Your Cakey" Font Styling */
+.header-text h1 {
+    font-family: 'Dancing Script', cursive; /* Or use 'Great Vibes', cursive */
+    font-size: 3rem;
+    letter-spacing: 2px; /* Adjust if needed */
+    font-weight: 500; /* Keeps it not too bold */
+}
+
+
+/* Header Logo */
+.header-logo img {
+    width: 100px; /* Increased logo size */
+    height: auto;
+}
+
+/* Gallery Styling */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    row-gap: 35px; /* Increase space between rows */
+    padding: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.cake img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.cake img:hover {
+    transform: scale(1.05);
+}
+
+/* Modals */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.view-more {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.view-more button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #9F2B68;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.view-more button:hover {
+    background-color: #F33A6A;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    max-height: 80%;
+    overflow-y: auto;
+    text-align: center;
+    position: relative;
+    animation: fadeIn 0.4s;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.modal-content img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Close Button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #5d0034;
+}
+@keyframes slideIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.gallery {
+    animation: slideIn 1s ease-out;
+}
+
+.hero h1, .hero p {
+    animation: slideIn 1s ease-out;
+}
+
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cake img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .cake img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .header-content {
+        text-align: center;
+    }
+
+    .header-text {
+        margin-bottom: 15px;
+    }
+
+    .modal-content img {
+        width: 90%;
+    }
+}
+/* Enhanced Mobile Responsiveness */
+@media (max-width: 768px) {
+    /* Reduce header height and adjust padding */
+    header {
+        padding: 15px;
+    }
+
+    /* Make the logo smaller */
+    .header-logo img {
+        width: 80px; /* Reduced size */
+    }
+
+    /* Adjust header text */
+    .header-text h1 {
+        font-size: 2.5rem; /* Smaller font size for mobile */
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further reduce logo size for very small devices */
+    .header-logo img {
+        width: 60px;
+    }
+
+    /* Adjust header text */
+    .header-text h1 {
+        font-size: 2rem;
+        letter-spacing: 0.5px;
+    }
+}
